@@ -1,0 +1,568 @@
+{
+  "schema_version": 1,
+  "max_prospects": 20,
+  "search_region_priority": ["Kranj", "Gorenjska region", "Ljubljana"],
+  "last_refresh": "2026-09-24",
+  "prospects": [
+    {
+      "id": "pizzerija-gorenc",
+      "business_name": "Pizzerija Gorenc",
+      "short_description": "Pizzeria on the Kranj-Naklo road with a full menu and strong reviews (9.6/10, 20 reviews), currently only listed on a travel directory.",
+      "location": "Kranj, Slovenia",
+      "business_type": "restaurant / pizzeria",
+      "legal_form": "unknown",
+      "has_existing_site": false,
+      "existing_site_url": null,
+      "existing_site_quality": "none",
+      "revenue_last_3_years": {
+        "currency": "EUR",
+        "years": {},
+        "source": null,
+        "source_url": null,
+        "note": "Not yet looked up - check bizi.si / AJPES on next refresh."
+      },
+      "content_availability": {
+        "level": "high",
+        "sources": ["https://sloveniaholidays.com/pizzerija-gorenc-kranj/"],
+        "notes": "Full menu, dish photos, and 20 reviews already published on the directory listing."
+      },
+      "conversion_potential": {
+        "score": "high",
+        "reasoning": "No site of its own, totally standard business, strong existing content/reviews to reuse, active on a main road."
+      },
+      "source_urls": ["https://sloveniaholidays.com/pizzerija-gorenc-kranj/"],
+      "first_found": "2026-09-24",
+      "last_evaluated": "2026-09-24",
+      "notes": "Top pick from first screening round."
+    },
+    {
+      "id": "avto-mocnik",
+      "business_name": "Avto Močnik",
+      "short_description": "Multi-brand car dealership and service shop, family-run since 1922.",
+      "location": "Britof, Kranj, Slovenia",
+      "business_type": "car dealership / auto service",
+      "legal_form": "unknown",
+      "has_existing_site": true,
+      "existing_site_url": "http://www.avto-mocnik.si/",
+      "existing_site_quality": "poor",
+      "revenue_last_3_years": {
+        "currency": "EUR",
+        "years": {},
+        "source": null,
+        "source_url": null,
+        "note": "Not yet looked up - check bizi.si / AJPES on next refresh."
+      },
+      "content_availability": {
+        "level": "high",
+        "sources": ["existing site has 19+ photos and company history"],
+        "notes": "Genuine 100+ year story, established multi-brand dealer, real content already exists on the old site."
+      },
+      "conversion_potential": {
+        "score": "high",
+        "reasoning": "Strongest before/after story on the list (outdated, non-mobile site vs. real 100-year legacy); established revenue makes willingness to pay a safer bet. Slightly more scope than pure content site (dealer inventory, brand pages)."
+      },
+      "source_urls": ["http://www.avto-mocnik.si/"],
+      "first_found": "2026-09-24",
+      "last_evaluated": "2026-09-24",
+      "notes": "Second pick from first screening round."
+    },
+    {
+      "id": "kmetija-pod-storzicem",
+      "business_name": "Kmetija pod Storžičem",
+      "short_description": "Dairy farm selling yogurt, skuta, butter and cheese.",
+      "location": "Kranj area, Slovenia",
+      "business_type": "farm / dairy producer",
+      "legal_form": "unknown",
+      "has_existing_site": false,
+      "existing_site_url": null,
+      "existing_site_quality": "none",
+      "revenue_last_3_years": {
+        "currency": "EUR",
+        "years": {},
+        "source": null,
+        "source_url": null,
+        "note": "Not yet looked up - likely too small for public AJPES filings if a sole proprietorship."
+      },
+      "content_availability": {
+        "level": "medium",
+        "sources": ["https://www.facebook.com/p/Kmetija-pod-Stor%C5%BEi%C4%8Dem-100083316370288/"],
+        "notes": "816 Facebook likes, presumably has product photos, nothing consolidated on a site."
+      },
+      "conversion_potential": {
+        "score": "high",
+        "reasoning": "Cleanest blank-slate opportunity - no website exists at all, standard small farm business."
+      },
+      "source_urls": ["https://www.facebook.com/p/Kmetija-pod-Stor%C5%BEi%C4%8Dem-100083316370288/"],
+      "first_found": "2026-09-24",
+      "last_evaluated": "2026-09-24",
+      "notes": "Third pick from first screening round."
+    },
+    {
+      "id": "joza-jagodic",
+      "business_name": "Jože Jagodič - projektiranje in tehnično svetovanje / custom furniture",
+      "short_description": "Custom furniture and interior design, sole proprietor.",
+      "location": "Preddvor, Slovenia",
+      "business_type": "custom furniture / interior design",
+      "legal_form": "s.p.",
+      "has_existing_site": false,
+      "existing_site_url": null,
+      "existing_site_quality": "none",
+      "revenue_last_3_years": {
+        "currency": "EUR",
+        "years": {},
+        "source": null,
+        "source_url": null,
+        "note": "s.p. - likely no public AJPES filing; not yet checked."
+      },
+      "content_availability": {
+        "level": "medium",
+        "sources": ["https://www.mojmojster.net/izvajalec/joza_jagodic_projektiranje_in_tehnicno_svetovanje"],
+        "notes": "4 five-star reviews plus portfolio photos, but only on the Mojmojster directory."
+      },
+      "conversion_potential": {
+        "score": "high",
+        "reasoning": "No website, good reviews and portfolio photos already exist, standard craft business."
+      },
+      "source_urls": ["https://www.mojmojster.net/izvajalec/joza_jagodic_projektiranje_in_tehnicno_svetovanje"],
+      "first_found": "2026-09-24",
+      "last_evaluated": "2026-09-24",
+      "notes": "Shares the operator's surname (Jagodič) - worth checking for a family connection before treating as a cold outreach prospect; could be the lowest-friction way to pilot the workflow."
+    },
+    {
+      "id": "mizarstvo-ognjen-devic",
+      "business_name": "Mizarstvo Ognjen Dević",
+      "short_description": "Custom furniture carpenter.",
+      "location": "Kranj, Slovenia",
+      "business_type": "custom furniture / carpentry",
+      "legal_form": "unknown",
+      "has_existing_site": false,
+      "existing_site_url": null,
+      "existing_site_quality": "none",
+      "revenue_last_3_years": {
+        "currency": "EUR",
+        "years": {},
+        "source": null,
+        "source_url": null,
+        "note": "Not yet looked up."
+      },
+      "content_availability": {
+        "level": "medium",
+        "sources": ["Instagram (active)", "directory listings"],
+        "notes": "Active Instagram presence with product photos likely reusable."
+      },
+      "conversion_potential": {
+        "score": "high",
+        "reasoning": "No site, real craft business, active social presence to draw content from."
+      },
+      "source_urls": [],
+      "first_found": "2026-09-24",
+      "last_evaluated": "2026-09-24",
+      "notes": ""
+    },
+    {
+      "id": "mizarstvo-porenta",
+      "business_name": "Mizarstvo Porenta",
+      "short_description": "Custom furniture carpenter (kitchens, bedrooms, stairs), established 2001.",
+      "location": "Kranj, Slovenia",
+      "business_type": "custom furniture / carpentry",
+      "legal_form": "unknown",
+      "has_existing_site": true,
+      "existing_site_url": null,
+      "existing_site_quality": "poor",
+      "revenue_last_3_years": {
+        "currency": "EUR",
+        "years": {},
+        "source": null,
+        "source_url": null,
+        "note": "Not yet looked up."
+      },
+      "content_availability": {
+        "level": "medium",
+        "sources": [],
+        "notes": "Own site exists but is plain http (not https) and clearly very old."
+      },
+      "conversion_potential": {
+        "score": "high",
+        "reasoning": "Straightforward standard craft business with an obviously outdated site (unencrypted, old design)."
+      },
+      "source_urls": [],
+      "first_found": "2026-09-24",
+      "last_evaluated": "2026-09-24",
+      "notes": ""
+    },
+    {
+      "id": "turisticna-kmetija-pr-brcnk",
+      "business_name": "Turistična kmetija pr' Brčnk",
+      "short_description": "Tourist farm restaurant known for homemade food and strudels; seasonal (closed May-Sept).",
+      "location": "Planica, Kranj, Slovenia",
+      "business_type": "tourist farm / restaurant",
+      "legal_form": "unknown",
+      "has_existing_site": false,
+      "existing_site_url": null,
+      "existing_site_quality": "none",
+      "revenue_last_3_years": {
+        "currency": "EUR",
+        "years": {},
+        "source": null,
+        "source_url": null,
+        "note": "Not yet looked up."
+      },
+      "content_availability": {
+        "level": "medium",
+        "sources": ["Visit Kranj write-up"],
+        "notes": "Some local write-up coverage, no consolidated site content."
+      },
+      "conversion_potential": {
+        "score": "medium",
+        "reasoning": "Good fit but small and seasonal, which may limit budget/urgency."
+      },
+      "source_urls": [],
+      "first_found": "2026-09-24",
+      "last_evaluated": "2026-09-24",
+      "notes": ""
+    },
+    {
+      "id": "korotan-kranj",
+      "business_name": "Korotan Kranj",
+      "short_description": "Agricultural machinery dealer and service shop, ~13 employees.",
+      "location": "Kranj, Slovenia",
+      "business_type": "agri-machinery dealer / service",
+      "legal_form": "unknown",
+      "has_existing_site": true,
+      "existing_site_url": "https://www.korotan-kranj.si/",
+      "existing_site_quality": "mediocre",
+      "revenue_last_3_years": {
+        "currency": "EUR",
+        "years": {},
+        "source": null,
+        "source_url": null,
+        "note": "Not yet looked up."
+      },
+      "content_availability": {
+        "level": "medium",
+        "sources": ["https://www.korotan-kranj.si/"],
+        "notes": "Mostly brand logos/catalog content, less photogenic than a content-forward business."
+      },
+      "conversion_potential": {
+        "score": "medium",
+        "reasoning": "Established, real revenue likely, but dated-not-terrible site and a B2B catalog across 3 divisions adds more scope than a simple content site."
+      },
+      "source_urls": ["https://www.korotan-kranj.si/"],
+      "first_found": "2026-09-24",
+      "last_evaluated": "2026-09-24",
+      "notes": ""
+    },
+    {
+      "id": "klemen-bucek-krovstvo",
+      "business_name": "Klemen Buček - krovstvo/kleparstvo",
+      "short_description": "Roofing and sheet-metal craftsman.",
+      "location": "Kokrica, Kranj, Slovenia",
+      "business_type": "roofing / sheet metal trade",
+      "legal_form": "unknown",
+      "has_existing_site": false,
+      "existing_site_url": null,
+      "existing_site_quality": "none",
+      "revenue_last_3_years": {
+        "currency": "EUR",
+        "years": {},
+        "source": null,
+        "source_url": null,
+        "note": "Not yet looked up."
+      },
+      "content_availability": {
+        "level": "low",
+        "sources": ["directory listings only"],
+        "notes": "Only directory listings found, no dedicated photo set."
+      },
+      "conversion_potential": {
+        "score": "medium",
+        "reasoning": "No site, standard trade business, but less photogenic and less content to start from than the carpentry/food candidates."
+      },
+      "source_urls": [],
+      "first_found": "2026-09-24",
+      "last_evaluated": "2026-09-24",
+      "notes": ""
+    },
+    {
+      "id": "zupdesign",
+      "business_name": "ZupDesign",
+      "short_description": "Vehicle-wrap and graphic design / print shop.",
+      "location": "Slovenia (region unconfirmed)",
+      "business_type": "graphic design / vehicle wraps / print",
+      "legal_form": "unknown",
+      "has_existing_site": true,
+      "existing_site_url": "https://www.zupdesign.com/",
+      "existing_site_quality": "mediocre",
+      "revenue_last_3_years": {
+        "currency": "EUR",
+        "years": {},
+        "source": null,
+        "source_url": null,
+        "note": "Not yet looked up."
+      },
+      "content_availability": {
+        "level": "medium",
+        "sources": ["https://www.zupdesign.com/"],
+        "notes": ""
+      },
+      "conversion_potential": {
+        "score": "medium",
+        "reasoning": "Dated but functional WordPress site. Design-adjacent client may bring particular/demanding design expectations for a first client."
+      },
+      "source_urls": ["https://www.zupdesign.com/"],
+      "first_found": "2026-09-24",
+      "last_evaluated": "2026-09-24",
+      "notes": ""
+    },
+    {
+      "id": "firas-kranj",
+      "business_name": "FIRAS Kranj d.o.o.",
+      "short_description": "Accounting/finance firm, operating since 1992.",
+      "location": "Kranj, Slovenia",
+      "business_type": "accounting / financial services",
+      "legal_form": "d.o.o.",
+      "has_existing_site": false,
+      "existing_site_url": null,
+      "existing_site_quality": "none",
+      "revenue_last_3_years": {
+        "currency": "EUR",
+        "years": {},
+        "source": null,
+        "source_url": null,
+        "note": "d.o.o. - public AJPES filing likely exists; not yet pulled."
+      },
+      "content_availability": {
+        "level": "low",
+        "sources": ["https://www.bizi.si/FIRAS-KRANJ-D-O-O/"],
+        "notes": "No photos, pure text/registry data - nothing content-forward to reuse."
+      },
+      "conversion_potential": {
+        "score": "medium",
+        "reasoning": "Dead simple site to build (services/team/contact) and no independent site exists, but visually uninteresting and appears very small (~1 employee), so budget is uncertain."
+      },
+      "source_urls": ["https://www.bizi.si/FIRAS-KRANJ-D-O-O/"],
+      "first_found": "2026-09-24",
+      "last_evaluated": "2026-09-24",
+      "notes": ""
+    },
+    {
+      "id": "planet-plus",
+      "business_name": "Planet Plus",
+      "short_description": "Furniture showroom and interior design consultancy, large multi-category catalog.",
+      "location": "Ljubljana, Slovenia",
+      "business_type": "furniture showroom / interior consultancy",
+      "legal_form": "unknown",
+      "has_existing_site": true,
+      "existing_site_url": "https://planetplus.si/",
+      "existing_site_quality": "mediocre",
+      "revenue_last_3_years": {
+        "currency": "EUR",
+        "years": {},
+        "source": null,
+        "source_url": null,
+        "note": "Not yet looked up."
+      },
+      "content_availability": {
+        "level": "medium",
+        "sources": ["https://planetplus.si/"],
+        "notes": "Large catalog across 11+ categories - more showroom-scale than a simple content site."
+      },
+      "conversion_potential": {
+        "score": "low",
+        "reasoning": "Site is dated but functional, not clearly bad enough for a strong before/after story; catalog scale may exceed a simple content-forward build."
+      },
+      "source_urls": ["https://planetplus.si/"],
+      "first_found": "2026-09-24",
+      "last_evaluated": "2026-09-24",
+      "notes": "In scope now that Ljubljana is an accepted search region."
+    },
+    {
+      "id": "cebelarstvo-pivk",
+      "business_name": "Čebelarstvo Pivk",
+      "short_description": "Small honey producer.",
+      "location": "Naklo, near Kranj, Slovenia",
+      "business_type": "beekeeping / honey producer",
+      "legal_form": "unknown",
+      "has_existing_site": false,
+      "existing_site_url": null,
+      "existing_site_quality": "none",
+      "revenue_last_3_years": {
+        "currency": "EUR",
+        "years": {},
+        "source": null,
+        "source_url": null,
+        "note": "Not yet looked up - likely too small for public filings."
+      },
+      "content_availability": {
+        "level": "low",
+        "sources": [],
+        "notes": "Minimal content found, single product line."
+      },
+      "conversion_potential": {
+        "score": "low",
+        "reasoning": "Likely too small/low-revenue to justify paying for a site; kept for completeness only."
+      },
+      "source_urls": [],
+      "first_found": "2026-09-24",
+      "last_evaluated": "2026-09-24",
+      "notes": ""
+    },
+    {
+      "id": "policarjeva-kmetija",
+      "business_name": "Poličarjeva kmetija",
+      "short_description": "Self-sufficient family farm selling dairy, meat and vegetables through its own shop.",
+      "location": "Kranj area, Slovenia",
+      "business_type": "farm / farm shop",
+      "legal_form": "unknown",
+      "has_existing_site": true,
+      "existing_site_url": "https://policarjeva-kmetija.si/",
+      "existing_site_quality": "poor",
+      "revenue_last_3_years": {
+        "currency": "EUR",
+        "years": {},
+        "source": null,
+        "source_url": null,
+        "note": "Not yet looked up."
+      },
+      "content_availability": {
+        "level": "high",
+        "sources": ["https://policarjeva-kmetija.si/"],
+        "notes": "Existing site has a gallery, product descriptions and farm story to migrate."
+      },
+      "conversion_potential": {
+        "score": "high",
+        "reasoning": "Site frozen since ~2016 (copyright says 2014), not mobile-friendly; real content already exists to migrate."
+      },
+      "source_urls": ["https://policarjeva-kmetija.si/"],
+      "first_found": "2026-09-24",
+      "last_evaluated": "2026-09-24",
+      "notes": ""
+    },
+    {
+      "id": "rizeva-skleda",
+      "business_name": "Riževa Skleda",
+      "short_description": "Asian restaurant with full menu and chef bio.",
+      "location": "Kranj, Slovenia",
+      "business_type": "restaurant",
+      "legal_form": "unknown",
+      "has_existing_site": true,
+      "existing_site_url": "https://www.rizevaskleda.com/",
+      "existing_site_quality": "good",
+      "revenue_last_3_years": {
+        "currency": "EUR",
+        "years": {},
+        "source": null,
+        "source_url": null,
+        "note": "Not yet looked up."
+      },
+      "content_availability": {
+        "level": "high",
+        "sources": ["https://www.rizevaskleda.com/"],
+        "notes": "Full menu, 12 dish photos, chef bio - already well presented."
+      },
+      "conversion_potential": {
+        "score": "low",
+        "reasoning": "Already has a reasonably modern, bilingual site - weak before/after story."
+      },
+      "source_urls": ["https://www.rizevaskleda.com/"],
+      "first_found": "2026-09-24",
+      "last_evaluated": "2026-09-24",
+      "notes": ""
+    },
+    {
+      "id": "avtoservis-hudo",
+      "business_name": "Avtoservis Hudo",
+      "short_description": "Auto service shop.",
+      "location": "Kranj, Slovenia",
+      "business_type": "auto service",
+      "legal_form": "unknown",
+      "has_existing_site": true,
+      "existing_site_url": "https://avtoservis-hudo.si/",
+      "existing_site_quality": "good",
+      "revenue_last_3_years": {
+        "currency": "EUR",
+        "years": {},
+        "source": null,
+        "source_url": null,
+        "note": "Not yet looked up."
+      },
+      "content_availability": {
+        "level": "medium",
+        "sources": ["https://avtoservis-hudo.si/"],
+        "notes": ""
+      },
+      "conversion_potential": {
+        "score": "low",
+        "reasoning": "Already a fairly modern WordPress site - weak before/after story."
+      },
+      "source_urls": ["https://avtoservis-hudo.si/"],
+      "first_found": "2026-09-24",
+      "last_evaluated": "2026-09-24",
+      "notes": ""
+    },
+    {
+      "id": "shen-performance",
+      "business_name": "Shen Performance",
+      "short_description": "Auto repair and tuning shop, established 2022.",
+      "location": "Slovenia (region unconfirmed)",
+      "business_type": "auto repair / tuning",
+      "legal_form": "unknown",
+      "has_existing_site": true,
+      "existing_site_url": "https://shen-performance.si/",
+      "existing_site_quality": "good",
+      "revenue_last_3_years": {
+        "currency": "EUR",
+        "years": {},
+        "source": null,
+        "source_url": null,
+        "note": "Not yet looked up."
+      },
+      "content_availability": {
+        "level": "medium",
+        "sources": ["https://shen-performance.si/"],
+        "notes": ""
+      },
+      "conversion_potential": {
+        "score": "low",
+        "reasoning": "Already modern and responsive - weak before/after story."
+      },
+      "source_urls": ["https://shen-performance.si/"],
+      "first_found": "2026-09-24",
+      "last_evaluated": "2026-09-24",
+      "notes": ""
+    },
+    {
+      "id": "kamnosestvo-jeric",
+      "business_name": "Kamnoseštvo Jerič",
+      "short_description": "Stonemasonry business, operating since 1968.",
+      "location": "Kranj, Slovenia",
+      "business_type": "stonemasonry",
+      "legal_form": "unknown",
+      "has_existing_site": true,
+      "existing_site_url": "https://www.kamnosestvo-jeric.si/",
+      "existing_site_quality": "good",
+      "revenue_last_3_years": {
+        "currency": "EUR",
+        "years": {},
+        "source": null,
+        "source_url": null,
+        "note": "Not yet looked up."
+      },
+      "content_availability": {
+        "level": "high",
+        "sources": ["https://www.kamnosestvo-jeric.si/"],
+        "notes": "Project photos, active posts as of Nov 2025 - good reputation."
+      },
+      "conversion_potential": {
+        "score": "low",
+        "reasoning": "Already reasonably modern and actively maintained - weak before/after story despite good reputation."
+      },
+      "source_urls": ["https://www.kamnosestvo-jeric.si/"],
+      "first_found": "2026-09-24",
+      "last_evaluated": "2026-09-24",
+      "notes": ""
+    }
+  ],
+  "in_progress": [],
+  "active_clients": []
+}
