@@ -1,0 +1,9 @@
+# Sitebuilder resolves vendor styles and scripts (swiper, lightgallery) from
+# the project's node_modules, but declares them in sitebuilder-core rather than
+# here. pnpm's default layout keeps a dependency's own dependencies out of the
+# top level, which would leave Sass and esbuild unable to find them, so this
+# project uses the flat layout instead.
+#
+# Removing this file breaks the build with a confusing
+# "Can't find stylesheet to import" error from style.scss.
+nodeLinker: hoisted

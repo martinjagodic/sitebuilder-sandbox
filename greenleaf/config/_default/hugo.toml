@@ -1,0 +1,51 @@
+# GreenLeaf Digital — site configuration.
+#
+# Editable in the CMS under General → Site Configuration. Decap preserves keys
+# it does not declare, so the structural blocks below survive an editor saving
+# site settings.
+
+title = "GreenLeaf Digital"
+baseURL = "https://greenleaf.pages.dev/"
+locale = "sl-sl"
+defaultContentLanguage = "sl"
+timeZone = "Europe/Ljubljana"
+disableFastRender = true
+
+[module]
+  [[module.imports]]
+    path = "github.com/martinjagodic/sitebuilder-core"
+
+# Hugo only merges [params] from a module automatically. These blocks pull in
+# core's other defaults too — including the output format that renders the CMS
+# config at /admin/config.yml. Leave them alone.
+[markup]
+  _merge = "deep"
+
+[security]
+  _merge = "deep"
+
+[mediaTypes]
+  _merge = "deep"
+
+[outputFormats]
+  _merge = "deep"
+
+[outputs]
+  _merge = "deep"
+
+[params]
+  description = "Okolju prijazne spletne strani za trajnostne blagovne znamke"
+  author = "GreenLeaf Digital"
+  image = ""
+  logo = "/media/brand/logo.svg"
+  mediaPrefix = "greenleaf"
+
+  [params.cms]
+    backend = "local"
+    repo = "martinjagodic/sitebuilder-client-greenleaf"
+    branch = "main"
+    turboSiteId = ""
+    mediaLibrary = "repo"
+
+  [params.theme]
+    color_primary = "#2f9e5f"

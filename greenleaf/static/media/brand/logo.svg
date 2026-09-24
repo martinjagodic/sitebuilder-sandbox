@@ -1,0 +1,7 @@
+<svg width="84" height="84" viewBox="0 0 84 84" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M42 4C60 8 70 20 70 31C70 43 58 50 42 50C26 50 14 43 14 31C14 20 24 8 42 4Z" fill="#2E7D32"/>
+<path d="M42 48Q42 28 42 8" stroke="#A5D6A7" stroke-width="2.5" stroke-linecap="round"/>
+<path d="M42 20L54 14M42 20L30 14M42 34L57 27M42 34L27 27" stroke="#A5D6A7" stroke-width="1.5" stroke-linecap="round"/>
+<path d="M42 50L42 56" stroke="#5D4037" stroke-width="3" stroke-linecap="round"/>
+<text x="42" y="76" text-anchor="middle" font-family="Helvetica, Arial, sans-serif" font-weight="700" font-size="24" letter-spacing="1" fill="#1B3A20">GL</text>
+</svg>

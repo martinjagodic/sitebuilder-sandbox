@@ -1,0 +1,37 @@
+#!/usr/bin/env bash
+#
+# Sandbox helper. Runs a sitebuilder command inside a project subfolder with
+# the core Hugo module pointed at the local checkout, so edits to
+# sitebuilder-core show up immediately without publishing a module version.
+#
+#   ./sb dev greenleaf
+#   ./sb build greenleaf
+#   ./sb new <name>
+
+set -euo pipefail
+
+CORE="${SITEBUILDER_CORE:-$(cd "$(dirname "$0")/../sitebuilder-core" && pwd)}"
+export HUGO_MODULE_REPLACEMENTS="github.com/martinjagodic/sitebuilder-core -> ${CORE}"
+
+command="${1:-}"
+project="${2:-}"
+
+if [[ -z "$command" ]]; then
+  echo "usage: ./sb <dev|build|lint|new> <project>" >&2
+  exit 1
+fi
+
+if [[ "$command" == "new" ]]; then
+  node "${CORE}/bin/sitebuilder.js" new "$project" --local
+  echo "Now run: cd ${project} && pnpm install"
+  exit 0
+fi
+
+if [[ -z "$project" || ! -d "$project" ]]; then
+  echo "sb: no such project '${project}'" >&2
+  exit 1
+fi
+
+cd "$project"
+shift 2 || true
+exec node "${CORE}/bin/sitebuilder.js" "$command" "$@"
