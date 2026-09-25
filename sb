@@ -6,7 +6,7 @@
 #
 #   ./sb dev greenleaf
 #   ./sb build greenleaf
-#   ./sb new <name>
+#   ./sb new <name> [--lang en]
 
 set -euo pipefail
 
@@ -22,7 +22,8 @@ if [[ -z "$command" ]]; then
 fi
 
 if [[ "$command" == "new" ]]; then
-  node "${CORE}/bin/sitebuilder.js" new "$project" --local
+  shift 2 || true
+  node "${CORE}/bin/sitebuilder.js" new "$project" --local "$@"
   echo "Now run: cd ${project} && pnpm install"
   exit 0
 fi

@@ -14,10 +14,10 @@ If a change could benefit another site — a component, a style, a CMS field, a 
 
 | Path | Holds |
 | --- | --- |
-| `content/` | Pages and posts |
+| `content/` | Pages and posts, one file per language: `about.sl.md`, `about.en.md` |
 | `static/media/` | Logo, favicon, uploads |
-| `config/_default/hugo.toml` | Title, baseURL, module import, branding, theme, `mediaPrefix`, `[cms]`. CMS edits this file — it preserves keys it does not declare, so the structural blocks survive. |
-| `config/_default/menus.yaml` | Navigation |
+| `config/_default/hugo.toml` | Title, baseURL, module import, `[languages]`, branding, theme, `mediaPrefix`, `[cms]`. CMS edits this file — it preserves keys it does not declare, so the structural blocks survive. |
+| `config/_default/menus.yaml` | Navigation, one list for every language (`pageRef` items) |
 | `data/` | Data files, mostly content for global components |
 | `assets/styles/_custom.scss` | Brand-only CSS |
 | `static/admin/` | Only if overriding the Decap shell — normally absent |
@@ -37,7 +37,7 @@ The CMS is local-only right now: `npx decap-server` plus `/admin`, uploads into 
 Always go through `./sb` — it sets `HUGO_MODULE_REPLACEMENTS` so Hugo uses the local core checkout instead of trying to fetch the private module.
 
 ```bash
-./sb new <name>       # scaffold
+./sb new <name>       # scaffold (--lang en for an English-main site)
 ./sb dev <name>       # dev server
 ./sb build <name>     # lint + build
 ./sb lint <name>      # lint only
@@ -49,7 +49,7 @@ Running bare `hugo` inside a project folder fails — the module has no publishe
 
 - Each project installs its own `node_modules` with **pnpm**. There is no workspace on purpose: a project folder must stay byte-identical to what ships in a client repo, so promoting it is just a move. pnpm shares packages from a global store, so a project costs ~3 MB of disk, not ~55 MB.
 - Every project ships `pnpm-workspace.yaml` with `nodeLinker: hoisted`. It is load-bearing: Sass and esbuild resolve `swiper`/`lightgallery` from the project's `node_modules`, but those are declared in core. pnpm's default layout hides them and the build fails with a misleading `Can't find stylesheet to import`. Do not delete it.
-- After changing core's `package.json` or CLI, re-run `pnpm install` in the project to pick it up: the `file:` core dep is packed and copied, not symlinked. Layout/SCSS changes need no reinstall — those come through the Hugo module.
+- After changing core's `package.json`, CLI, lint or PostCSS config, refresh the project's copy of core: the `file:` core dep is packed and copied, not symlinked, and a plain `pnpm install` keeps the cached pack, so run `rm -rf node_modules/sitebuilder-core && pnpm install`. Layout/SCSS changes need no refresh — those come through the Hugo module, and PurgeCSS purges against the rendered HTML (`hugo_stats.json`), not the copy's layouts.
 
 ## Verifying a change
 

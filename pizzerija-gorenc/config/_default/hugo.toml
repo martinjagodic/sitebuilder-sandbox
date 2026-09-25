@@ -1,0 +1,97 @@
+# Pizzerija Gorenc — site configuration.
+#
+# Editable in the CMS under General → Site Configuration. Decap preserves keys
+# it does not declare, so the structural blocks below survive an editor saving
+# site settings — but TOML comments may not, so the reasoning lives in
+# sitebuilder-core's CLAUDE.md too.
+
+title = "Pizzerija Gorenc"
+baseURL = "https://pizzerija-gorenc.pages.dev/"
+# The main language: served at the root, and never turned off.
+defaultContentLanguage = "sl"
+timeZone = "Europe/Ljubljana"
+disableFastRender = true
+
+[module]
+  [[module.imports]]
+    path = "github.com/martinjagodic/sitebuilder-core"
+
+# Every language this site may use. The CMS turns the other one on and off
+# under General → Site Configuration → Languages, which writes `disabled`.
+# Page files name their language: about.sl.md, about.en.md.
+[languages]
+  [languages.sl]
+    label = "Slovenščina"
+    locale = "sl-SI"
+    weight = 1
+    disabled = false
+  [languages.en]
+    label = "English"
+    locale = "en-GB"
+    weight = 2
+    disabled = true
+
+# Hugo only merges [params] from a module automatically. These blocks pull in
+# core's other defaults too — including the output format that renders the CMS
+# config at /admin/config.yml. Leave them alone.
+[build]
+  _merge = "deep"
+
+[markup]
+  _merge = "deep"
+
+[security]
+  _merge = "deep"
+
+[mediaTypes]
+  _merge = "deep"
+
+[outputFormats]
+  _merge = "deep"
+
+[outputs]
+  _merge = "deep"
+
+[params]
+  description = "Pice iz krušne peči, zrezki, solate in domače sladice ob cesti Kranj–Naklo. Pokrita terasa, igrala za otroke in veliko parkirišče."
+  author = "Pizzerija Gorenc"
+  # Open Graph fallback image
+  image = "/media/uploads/pizza-in-jedi-na-mizi.jpg"
+  logo = "/media/brand/logo.png"
+
+  # Folder for this project's files inside the shared Bunny zone. The zone
+  # itself is set once in core. Leave empty to serve media from the repo.
+  mediaPrefix = "pizzerija-gorenc"
+
+  # Decap CMS. Create the site in the Decap Turbo dashboard, paste the UUID
+  # from its Overview tab, then rebuild — the config regenerates itself.
+  [params.cms]
+    # "local" keeps the CMS on localhost via `npx decap-server`.
+    # Switch to "turbo-github" once the site is connected in Decap Turbo.
+    backend = "turbo-github"
+    branch = "main"
+    turboSiteId = 72a70c9d-a19f-4044-8b2c-f9234574b681
+    # "repo" stores uploads in static/media/uploads.
+    # "s3" uses Bunny Storage through Turbo's media proxy.
+    mediaLibrary = "s3"
+
+  # Brand overrides on top of core's theme defaults. Delete what you don't
+  # change — core's value is used for anything omitted.
+  # Red and green are sampled from the logo. White on the red is 4.9:1; the
+  # green is only 3.4:1 against white, so it is used for accents, not text.
+  [params.theme]
+    fonts = "bree-serif:400|source-sans-3:400,600"
+    font_primary = "'Source Sans 3', system-ui, sans-serif"
+    font_heading = "'Bree Serif', Georgia, serif"
+    font_heading_weight = "400"
+    color_primary = "#e01810"
+    color_on_primary = "#ffffff"
+    color_secondary = "#00a058"
+    color_text = "#4a3f38"
+    color_heading = "#241a15"
+    color_background = "#fffdf8"
+    color_surface = "#f6efe3"
+    color_dark = "#241a15"
+    radius = "0.75rem"
+    logo_height = "4rem"
+    content_width = "calc(1280px + (2 * var(--container-padding)))"

@@ -1,4 +1,4 @@
-# GreenLeaf Digital
+# Pizzerija Gorenc
 
 A [Sitebuilder](https://github.com/martinjagodic/sitebuilder-core) project. Layouts, styles, scripts and the CMS schema come from `sitebuilder-core`. This repo holds only branding, content and customizations.
 
@@ -11,7 +11,7 @@ pnpm run dev           # http://localhost:1313
 npx decap-server       # second terminal, for the CMS at /admin
 ```
 
-While this project still lives in `sitebuilder-sandbox`, run it from the sandbox root instead — `./sb dev greenleaf` — so Hugo uses the local core checkout.
+While this project still lives in `sitebuilder-sandbox`, run it from the sandbox root instead — `./sb dev pizzerija-gorenc` — so Hugo uses the local core checkout.
 
 ## Where things live
 

@@ -1,0 +1,28 @@
+{
+  "name": "Pizzerija Gorenc",
+  "schemaType": "Restaurant",
+  "address": {
+    "street": "Koroška cesta 59",
+    "postalCode": "4000",
+    "city": "Kranj",
+    "country": "SI"
+  },
+  "geo": {
+    "lat": 46.2514238,
+    "lng": 14.3441239
+  },
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Pizzerija%20Gorenc%20Kranj&query_place_id=ChIJj_BV2T24ekcRdHToNdWWtiY",
+  "phone": "+386 4 236 13 00",
+  "email": "pizzerija.gorenc@siol.net",
+  "hours": [
+    { "days": ["mo", "tu", "we", "th", "fr", "sa", "su"], "opens": "11:00", "closes": "23:00" }
+  ],
+  "hoursNote": "Dostava prek Wolta vsak dan od 11.00 do 21.30.",
+  "social": [
+    { "network": "facebook", "url": "https://www.facebook.com/p/Pizzeria-Gorenc-61569163209101/" },
+    { "network": "instagram", "url": "https://www.instagram.com/pizzerijagorenc/" }
+  ],
+  "priceRange": "€€",
+  "servesCuisine": "Pizza",
+  "menuUrl": "/jedilnik/"
+}

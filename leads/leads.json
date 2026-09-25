@@ -5,37 +5,6 @@
   "last_refresh": "2026-09-24",
   "prospects": [
     {
-      "id": "pizzerija-gorenc",
-      "business_name": "Pizzerija Gorenc",
-      "short_description": "Pizzeria on the Kranj-Naklo road with a full menu and strong reviews (9.6/10, 20 reviews), currently only listed on a travel directory.",
-      "location": "Kranj, Slovenia",
-      "business_type": "restaurant / pizzeria",
-      "legal_form": "unknown",
-      "has_existing_site": false,
-      "existing_site_url": null,
-      "existing_site_quality": "none",
-      "revenue_last_3_years": {
-        "currency": "EUR",
-        "years": {},
-        "source": null,
-        "source_url": null,
-        "note": "Not yet looked up - check bizi.si / AJPES on next refresh."
-      },
-      "content_availability": {
-        "level": "high",
-        "sources": ["https://sloveniaholidays.com/pizzerija-gorenc-kranj/"],
-        "notes": "Full menu, dish photos, and 20 reviews already published on the directory listing."
-      },
-      "conversion_potential": {
-        "score": "high",
-        "reasoning": "No site of its own, totally standard business, strong existing content/reviews to reuse, active on a main road."
-      },
-      "source_urls": ["https://sloveniaholidays.com/pizzerija-gorenc-kranj/"],
-      "first_found": "2026-09-24",
-      "last_evaluated": "2026-09-24",
-      "notes": "Top pick from first screening round."
-    },
-    {
       "id": "avto-mocnik",
       "business_name": "Avto Močnik",
       "short_description": "Multi-brand car dealership and service shop, family-run since 1922.",
@@ -563,6 +532,42 @@
       "notes": ""
     }
   ],
-  "in_progress": [],
+  "in_progress": [
+    {
+      "id": "pizzerija-gorenc",
+      "business_name": "Pizzerija Gorenc",
+      "short_description": "Pizzeria with a wood-fired oven on the Kranj-Naklo road (Koroška cesta 59), covered terrace, playground and large car park; Google 4.5 from 1,989 reviews; no website of its own.",
+      "location": "Kranj, Slovenia",
+      "business_type": "restaurant / pizzeria",
+      "legal_form": "s.p.",
+      "has_existing_site": false,
+      "existing_site_url": null,
+      "existing_site_quality": "none",
+      "revenue_last_3_years": {
+        "currency": "EUR",
+        "years": {
+          "2023": 299628,
+          "2024": 269891,
+          "2025": 73427
+        },
+        "source": "ajpes",
+        "source_url": "https://www.companywall.si/podjetje/pizzerija-gorenc-mateja-stare---hribar-sp/MM1g3wdq",
+        "note": "PIZZERIJA GORENC MATEJA STARE - HRIBAR, S.P. (reg. 9 Dec 1998, matična 1256645000), AJPES figures via CompanyWall; identity confirmed on bizi.si (https://www.bizi.si/PIZZERIJA-GORENC-MATEJA-STARE-HRIBAR-S-P/). The 2025 drop coincides with Wolt listing MTRI, gostinstvo d.o.o. as merchant for the venue (2025 revenue 1,551,872 EUR) - relationship unclear, ask the owner."
+      },
+      "content_availability": {
+        "level": "high",
+        "sources": ["https://wolt.com/sl/svn/kranj/restaurant/pizzerija-gorenc-kr", "https://sloveniaholidays.com/pizzerija-gorenc-kranj/", "https://www.visitkranj.com/kulinarika/okusi-kranja/pizzerija-gorenc/", "https://www.instagram.com/pizzerijagorenc/", "https://www.facebook.com/p/Pizzeria-Gorenc-61569163209101/"],
+        "notes": "Full priced menu (66 items) and 59 professional dish photos come from Wolt, not sloveniaholidays (which has intro text, 11 premises photos from 2021 and 20 reviews). Google 4.5 from 1,989 reviews. Full research in leads/pizzerija-gorenc/research.md."
+      },
+      "conversion_potential": {
+        "score": "high",
+        "reasoning": "No site of its own, totally standard business, strong existing content/reviews to reuse, active on a main road."
+      },
+      "source_urls": ["https://sloveniaholidays.com/pizzerija-gorenc-kranj/", "https://www.bizi.si/PIZZERIJA-GORENC-MATEJA-STARE-HRIBAR-S-P/", "https://wolt.com/sl/svn/kranj/restaurant/pizzerija-gorenc-kr"],
+      "first_found": "2026-09-24",
+      "last_evaluated": "2026-09-24",
+      "notes": "Top pick from first screening round. | 2026-09-24: moved to in_progress — prototype started in sitebuilder-sandbox/pizzerija-gorenc, research in leads/pizzerija-gorenc/. | 2026-09-24: prototype built (Domov, Jedilnik, Kontakt); pitch notes and owner questions in leads/pizzerija-gorenc/handoff.md."
+    }
+  ],
   "active_clients": []
 }

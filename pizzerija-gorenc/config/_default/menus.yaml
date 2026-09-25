@@ -3,9 +3,9 @@
 # language, skipping languages it has none in. Without a `name`, the page's
 # menu title is shown. Use `url` only for links off the site.
 main:
-  - pageRef: /posts
+  - pageRef: /
     weight: 10
-  - pageRef: /about
+  - pageRef: /jedilnik
     weight: 20
-  - pageRef: /contact
+  - pageRef: /kontakt
     weight: 30
