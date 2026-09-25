@@ -62,3 +62,5 @@ This runs the same lint + build path as CI. If you touched core, build a sandbox
 ## Promoting
 
 `pnpm exec sitebuilder promote` inside the project swaps the local core dependency for the published git URL. Then `hugo mod tidy && pnpm install`, move the folder to its own repo, and set `GITHUB_TOKEN` in the deploy environment (core is private).
+
+If the site already uses Decap Turbo, change its repo in the Turbo dashboard to the new one — Turbo ignores `repo` in the config. The CMS paths need no change: `build.sh` prefixes them with the project's folder from git (`pizzerija-gorenc/content` here, `content` in its own repo).

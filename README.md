@@ -46,7 +46,7 @@ Set `SITEBUILDER_CORE` if your core checkout is somewhere else.
 
 The CMS config is rendered by Hugo on every build from the schema in sitebuilder-core — there is nothing to generate and nothing to commit. It is local-only for now: run `npx decap-server` next to the dev server and open `/admin`. Uploads land in `static/media/uploads`.
 
-When a site is ready to go live, connect it in the [Decap Turbo](https://decapcms.org/docs/turbo-connecting-a-site/) dashboard and set `cms.backend = "turbo-github"` and `cms.turboSiteId` in `hugo.toml`.
+When a site is ready to go live, connect it in the [Decap Turbo](https://decapcms.org/docs/turbo-connecting-a-site/) dashboard and set `cms.backend = "turbo-github"` and `cms.turboSiteId` in `hugo.toml`. Connect it to this repo; the build prefixes the CMS paths with the project's folder.
 
 ## Promoting to a client
 
@@ -70,3 +70,5 @@ Then move the folder into a new `sitebuilder-client-<name>` repo and point Cloud
 | `NODE_VERSION` | `24` |
 
 Cloudflare Pages detects `pnpm-lock.yaml` and installs with pnpm automatically.
+
+If the site is connected to Decap Turbo, change its repo in the Turbo dashboard to the new one. Nothing in the project changes: the CMS paths drop the folder prefix on their own once the project is the repo root.
