@@ -1,0 +1,12 @@
+// Brand-specific CSS for Planet Plus.
+// This file shadows core's empty _custom.scss and is imported at the end of
+// core's style.scss, so it wins over every core rule.
+// Rule of thumb: if another project could use it, it belongs in core instead.
+
+// The client's newsletter form (layouts/partials/hooks/footer.html).
+.footer__newsletter {
+  max-width: 32rem;
+  margin-top: var(--spacing-sm);
+  padding-top: var(--spacing-xs);
+  border-top: 1px solid rgb(255, 255, 255, 0.12);
+}

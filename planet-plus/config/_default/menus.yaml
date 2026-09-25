@@ -1,0 +1,46 @@
+# One menu for every language. `pageRef` is the page's path in content/
+# ("/kontakt" for content/kontakt.sl.md). An item with `parent` goes in the
+# dropdown of the item whose `identifier` it names.
+main:
+  - pageRef: /prodajni-program
+    identifier: program
+    weight: 10
+  - pageRef: /prodajni-program/kuhinje
+    parent: program
+    weight: 10
+  - pageRef: /prodajni-program/jedilnice
+    parent: program
+    weight: 20
+  - pageRef: /prodajni-program/sedezne-garniture
+    parent: program
+    weight: 30
+  - pageRef: /prodajni-program/dnevne-sobe
+    parent: program
+    weight: 40
+  - pageRef: /prodajni-program/garderobne-omare
+    parent: program
+    weight: 50
+  - pageRef: /prodajni-program/postelje-in-nocne-omarice
+    parent: program
+    weight: 60
+  - pageRef: /prodajni-program/vrata
+    parent: program
+    weight: 70
+  - pageRef: /prodajni-program/kopalniski-elementi
+    parent: program
+    weight: 75
+  - pageRef: /prodajni-program/zasteklitve
+    parent: program
+    weight: 80
+  - pageRef: /prodajni-program/otroske-in-mladinske-sobe
+    parent: program
+    weight: 90
+  - pageRef: /prodajni-program/okovje
+    parent: program
+    weight: 100
+  - pageRef: /partnerji
+    weight: 20
+  - pageRef: /reference
+    weight: 30
+  - pageRef: /kontakt
+    weight: 40

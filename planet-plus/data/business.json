@@ -1,0 +1,60 @@
+{
+  "name": "Planet Plus",
+  "schemaType": "FurnitureStore",
+  "address": {
+    "street": "Kajakaška cesta 40",
+    "postalCode": "1211",
+    "city": "Ljubljana – Šmartno",
+    "country": "SI"
+  },
+  "geo": {
+    "lat": 46.1182203,
+    "lng": 14.4547834
+  },
+  "mapsUrl": "https://www.google.com/maps/search/?api=1&query=Planet%20Plus%20Kajaka%C5%A1ka%20cesta%2040&query_place_id=ChIJGT5cJfXMekcRjDzM5QIxTz0",
+  "phone": "+386 1 516 16 63",
+  "email": "info@planetplus.si",
+  "hours": [
+    {
+      "days": [
+        "mo"
+      ],
+      "opens": "08:00",
+      "closes": "16:00"
+    },
+    {
+      "days": [
+        "tu",
+        "we",
+        "th"
+      ],
+      "opens": "08:00",
+      "closes": "18:00"
+    },
+    {
+      "days": [
+        "fr"
+      ],
+      "opens": "08:00",
+      "closes": "14:00"
+    },
+    {
+      "days": [
+        "sa",
+        "su"
+      ],
+      "closed": true
+    }
+  ],
+  "hoursNote": "Torek–četrtek od 16. do 18. ure po dogovoru.",
+  "social": [
+    {
+      "network": "facebook",
+      "url": "https://www.facebook.com/salonpohistvaplanetplus/"
+    },
+    {
+      "network": "instagram",
+      "url": "https://www.instagram.com/salonpohistvaplanetplus/"
+    }
+  ]
+}

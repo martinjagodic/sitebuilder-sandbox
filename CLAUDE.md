@@ -30,6 +30,8 @@ Images go through one shared Bunny pull zone (set once in core) so a single Bunn
 
 The CMS config is rendered by Hugo on every build to `/admin/config.yml` from core's `assets/admin/config.template.yml`. Nothing is generated into a project and nothing is committed. Exceptions are possible.
 
+A local-first prototype (no Bunny zone yet) sets `bunnyUrl = ""` in its `[params]`, so media is served straight from `static/media/`.
+
 The CMS is local-only right now: `npx decap-server` plus `/admin`, uploads into `static/media/uploads`. Going live means setting `cms.backend = "turbo-github"` and `cms.turboSiteId` in `hugo.toml` and rebuilding.
 
 ## Commands

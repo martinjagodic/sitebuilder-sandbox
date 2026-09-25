@@ -60,3 +60,14 @@ Write everything under
 Return a summary under 400 words: what's solid, what's missing, offer size,
 photo count and quality, whether a logo exists, and the top questions for the
 owner.
+
+---
+
+**Migration variant** (a site we built, content and photos supplied by the
+client): drop the photo downloads and the verbatim transcription of the
+site's own copy. Ask instead for the Google profile (rating, count, hours,
+pin, phone), every retrievable review, the registry data and every entity at
+the address, what each claimed brand's dealer locator says, the history from
+the Wayback Machine, and the follower counts. Tell the agent that Google,
+Facebook, Instagram and the dealer locators don't render for WebFetch; it can
+read the public data feeds those pages load with curl.

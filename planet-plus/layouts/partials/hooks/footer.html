@@ -1,0 +1,18 @@
+{{/*
+  Planet Plus's own newsletter sign-up: the EmailOctopus form the client runs
+  on their current site. Client-specific, so it lives here rather than in
+  core; it fills core's footer hook.
+
+  The script is EmailOctopus's embed: it draws the form where the tag sits and
+  brings its own styles.
+
+  Params:
+  - (context): required — The page the footer was first rendered for
+
+  Usage: {{ partial "hooks/footer" . }}
+*/}}
+
+<div class="footer__newsletter">
+  <h2 class="footer__heading">Prijava na e-novice</h2>
+  <script async src="https://eocampaign1.com/form/5e2d12da-307e-11f0-9027-4b832aa11351.js" data-form="5e2d12da-307e-11f0-9027-4b832aa11351"></script>
+</div>

@@ -315,37 +315,6 @@
       "notes": ""
     },
     {
-      "id": "planet-plus",
-      "business_name": "Planet Plus",
-      "short_description": "Furniture showroom and interior design consultancy, large multi-category catalog.",
-      "location": "Ljubljana, Slovenia",
-      "business_type": "furniture showroom / interior consultancy",
-      "legal_form": "unknown",
-      "has_existing_site": true,
-      "existing_site_url": "https://planetplus.si/",
-      "existing_site_quality": "mediocre",
-      "revenue_last_3_years": {
-        "currency": "EUR",
-        "years": {},
-        "source": null,
-        "source_url": null,
-        "note": "Not yet looked up."
-      },
-      "content_availability": {
-        "level": "medium",
-        "sources": ["https://planetplus.si/"],
-        "notes": "Large catalog across 11+ categories - more showroom-scale than a simple content site."
-      },
-      "conversion_potential": {
-        "score": "low",
-        "reasoning": "Site is dated but functional, not clearly bad enough for a strong before/after story; catalog scale may exceed a simple content-forward build."
-      },
-      "source_urls": ["https://planetplus.si/"],
-      "first_found": "2026-09-24",
-      "last_evaluated": "2026-09-24",
-      "notes": "In scope now that Ljubljana is an accepted search region."
-    },
-    {
       "id": "cebelarstvo-pivk",
       "business_name": "Čebelarstvo Pivk",
       "short_description": "Small honey producer.",
@@ -533,6 +502,37 @@
     }
   ],
   "in_progress": [
+    {
+      "id": "planet-plus",
+      "business_name": "Planet Plus",
+      "short_description": "Furniture showroom and interior design consultancy, large multi-category catalog.",
+      "location": "Ljubljana, Slovenia",
+      "business_type": "furniture showroom / interior consultancy",
+      "legal_form": "d.o.o.",
+      "has_existing_site": true,
+      "existing_site_url": "https://planetplus.si/",
+      "existing_site_quality": "mediocre",
+      "revenue_last_3_years": {
+        "currency": "EUR",
+        "years": { "2023": 1727718, "2024": 1614953, "2025": 1504469 },
+        "source": "ajpes",
+        "source_url": "https://www.companywall.si/podjetje/planet-plus-doo/MM1g2zuC",
+        "note": "PLANET PLUS, storitve in trgovina, d.o.o. (matična 1719009000), AJPES figures via CompanyWall; 8.11 employees in 2025. Details in leads/planet-plus/research.md."
+      },
+      "content_availability": {
+        "level": "medium",
+        "sources": ["https://planetplus.si/"],
+        "notes": "Large catalog across 11+ categories - more showroom-scale than a simple content site."
+      },
+      "conversion_potential": {
+        "score": "low",
+        "reasoning": "Site is dated but functional, not clearly bad enough for a strong before/after story; catalog scale may exceed a simple content-forward build."
+      },
+      "source_urls": ["https://planetplus.si/"],
+      "first_found": "2026-09-24",
+      "last_evaluated": "2026-09-25",
+      "notes": "In scope now that Ljubljana is an accepted search region. | 2026-09-25: moved to in_progress — migration of the existing site (the user is its current developer) to sitebuilder-core; prototype in sitebuilder-sandbox/planet-plus, research in leads/planet-plus/. | 2026-09-25: prototype built local-first (no Bunny, no Turbo): Domov, Prodajni program + 11 categories, Partnerji, Reference, Kontakt at the live URLs; dark brass design; owner questions and go-live list in leads/planet-plus/handoff.md."
+    },
     {
       "id": "pizzerija-gorenc",
       "business_name": "Pizzerija Gorenc",

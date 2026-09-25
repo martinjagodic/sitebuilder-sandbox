@@ -1,0 +1,64 @@
+{
+  "items": [
+    {
+      "name": "Kristalia",
+      "logo": "/media/uploads/partner-kristalia.png",
+      "href": "https://www.kristalia.it/en/"
+    },
+    {
+      "name": "Varaschin",
+      "logo": "/media/uploads/partner-varaschin.png",
+      "href": "https://varaschin.it/en/"
+    },
+    {
+      "name": "Softline",
+      "logo": "/media/uploads/partner-soft-line.png",
+      "href": "https://softlinefurniture.com/en/"
+    },
+    {
+      "name": "Pedrali",
+      "logo": "/media/uploads/partner-pedrali.png",
+      "href": "https://www.pedrali.com/en-us"
+    },
+    {
+      "name": "Oikos",
+      "logo": "/media/uploads/partner-oikos.png",
+      "href": "https://oikos.it/en/"
+    },
+    {
+      "name": "Novamobili",
+      "logo": "/media/uploads/partner-nova-mobili.png",
+      "href": "https://www.novamobili.it/en"
+    },
+    {
+      "name": "Doimo Cucine",
+      "logo": "/media/uploads/partner-doimo-cucine.png",
+      "href": "https://www.doimocucine.com/"
+    },
+    {
+      "name": "Nidi",
+      "logo": "/media/uploads/partner-nidi.png",
+      "href": "https://nidi.it/en"
+    },
+    {
+      "name": "Cinquanta3",
+      "logo": "/media/uploads/partner-cinquanta3.png",
+      "href": "https://www.cinquanta3.it/en"
+    },
+    {
+      "name": "MD House",
+      "logo": "/media/uploads/partner-md-house.png",
+      "href": "https://www.mdhouse.it/en/"
+    },
+    {
+      "name": "Fiora",
+      "logo": "/media/uploads/partner-fiora.png",
+      "href": "https://fiorabath.com/en/"
+    },
+    {
+      "name": "Metalglas",
+      "logo": "/media/uploads/partner-metalglas.png",
+      "href": "https://metalglas.it/"
+    }
+  ]
+}
