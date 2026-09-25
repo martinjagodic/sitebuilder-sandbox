@@ -7,10 +7,33 @@
 #   ./sb dev greenleaf
 #   ./sb build greenleaf
 #   ./sb new <name> [--lang en]
+#
+# Core is expected next to this repo (../sitebuilder-core), which is also where
+# each project's `file:../../sitebuilder-core` dependency points. CI clones only
+# this repo, so there sb clones core into that same spot first — at
+# SITEBUILDER_CORE_REF (default main) — and everything resolves exactly as it
+# does locally. On Cloudflare Pages that needs GITHUB_TOKEN and
+# SKIP_DEPENDENCY_INSTALL=1, because Pages' own install would run before core
+# exists.
 
 set -euo pipefail
 
-CORE="${SITEBUILDER_CORE:-$(cd "$(dirname "$0")/../sitebuilder-core" && pwd)}"
+SANDBOX="$(cd "$(dirname "$0")" && pwd)"
+CORE="${SITEBUILDER_CORE:-$(dirname "$SANDBOX")/sitebuilder-core}"
+cd "$SANDBOX"
+
+if [[ ! -d "$CORE" ]]; then
+  if [[ -z "${CI:-}" ]]; then
+    echo "sb: no sitebuilder-core at ${CORE}. Clone it there or set SITEBUILDER_CORE." >&2
+    exit 1
+  fi
+  : "${GITHUB_TOKEN:?sb: GITHUB_TOKEN is needed to clone the private sitebuilder-core}"
+  ref="${SITEBUILDER_CORE_REF:-main}"
+  echo "sb: cloning sitebuilder-core@${ref}"
+  git clone --quiet --depth 1 --branch "$ref" \
+    "https://x-access-token:${GITHUB_TOKEN}@github.com/martinjagodic/sitebuilder-core.git" "$CORE"
+fi
+
 export HUGO_MODULE_REPLACEMENTS="github.com/martinjagodic/sitebuilder-core -> ${CORE}"
 
 command="${1:-}"
@@ -35,4 +58,11 @@ fi
 
 cd "$project"
 shift 2 || true
+
+if [[ -n "${CI:-}" ]]; then
+  # Core's dependencies can differ between branches, so the lockfile (written
+  # against a local checkout) is used when it still fits, not enforced.
+  pnpm install --no-frozen-lockfile
+fi
+
 exec node "${CORE}/bin/sitebuilder.js" "$command" "$@"
