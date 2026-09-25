@@ -70,7 +70,7 @@ disableFastRender = true
     # Switch to "turbo-github" once the site is connected in Decap Turbo.
     backend = "turbo-github"
     branch = "main"
-    turboSiteId = 72a70c9d-a19f-4044-8b2c-f9234574b681
+    turboSiteId = "72a70c9d-a19f-4044-8b2c-f9234574b681"
     # "repo" stores uploads in static/media/uploads.
     # "s3" uses Bunny Storage through Turbo's media proxy.
     mediaLibrary = "s3"
